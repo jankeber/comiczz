@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import Comic from '../../components/Comic/Comic';
+import axios from 'axios';
 
 const Comics = (props) => {
     const [comics, setComics] = useState([]);
@@ -21,6 +22,12 @@ const Comics = (props) => {
 
     useEffect(() => {
         console.log('initial render');
+
+        axios.get()
+        .then(res => {
+            console.log(res);
+        })
+
         setComics([
             {
                 id: 1,
