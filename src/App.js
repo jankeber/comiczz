@@ -9,8 +9,10 @@ function App() {
       <>
         <Navbar />
         <Routes>
-          <Route path="/" exact element={<Comics />} />
-          <Route path="/:category" exact element={<Comics />} />
+          <Route path="/" exact key="root" element={<Comics />} />
+          <Route path="/comic" exact key="test" element={<Comics />} />
+          <Route path="/magazine" exact key="test" element={<Comics />} />
+          <Route path="/digital-comic" exact key="test" element={<Comics />} />
         </Routes>
       </>
   );
