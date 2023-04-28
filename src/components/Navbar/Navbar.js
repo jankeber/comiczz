@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Navbar.scss';
 import Logo from '../../assets/logo.svg';
 
@@ -11,16 +11,16 @@ function Navbar() {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">All</Link>
+                            <NavLink to="/" activeClassName="active">All</NavLink>
                         </li>
                         <li>
-                            <Link to="/comic">Comics</Link>
+                            <NavLink to="/comic" activeClassName="active">Comics</NavLink>
                         </li>
                         <li>
-                            <Link to="/magazine">Magazine</Link>
+                            <NavLink to="/magazine" activeClassName="active">Magazine</NavLink>
                         </li>
                         <li>
-                            <Link to="/digital">Digital comic</Link>
+                            <NavLink to="/digital-comic" activeClassName="active">Digital comic</NavLink>
                         </li>
                     </ul>
                 </nav>

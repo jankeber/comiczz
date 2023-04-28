@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import {Routes, Link, Route} from "react-router-dom";
 import Comics from './pages/Comics/Comics';
 import Navbar from './components/Navbar/Navbar';
