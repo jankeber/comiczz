@@ -1,0 +1,48 @@
+.comics {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.modal-wrapper {
+    display: flex;
+    flex-direction: row;
+    .content-wrapper {
+        .content-details {
+            margin-left: 15px;
+            span {
+                font-weight: 400;
+            }
+            .details-title {
+                font-weight: bold;
+            }
+        }
+        .content-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+            .price {
+                font-size: 19px;
+                font-weight: bold;
+            }
+            .close-button {
+                button {
+                    background-color: #DD2C2C;
+                    font-size: 17px;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    text-transform: none;
+                }
+            }
+        }
+    }
+}
