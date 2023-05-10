@@ -1,0 +1,32 @@
+.comic {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1D1D1D;
+    border-radius: 5px;
+    padding: 15px 10px;
+    h1 {
+        font-size: 15px;
+        color: #1D1D1D;
+        text-align: center;
+        display: flex;
+        flex: 1 0 auto;
+    }
+    img {
+        width: 100%;
+    }
+    .load-more {
+        background-color: #DD2C2C;
+        color: #FFFFFF;
+        font-size: 17px;
+        font-weight: 700;
+        border-radius: 5px;
+        text-transform: none;
+        padding: 7px 30px;
+        &:hover {
+            background-color: #dd5d5d;
+        }
+    }
+}
